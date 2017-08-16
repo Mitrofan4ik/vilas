@@ -1,12 +1,16 @@
 /*base*/
 
 @import 'assets/settings';
-@import 'assets/base-assets/header';
-@import 'assets/base-assets/footer';
 
 html,
 body {
     height: 100%;
+}
+
+h1 {
+    font: 40px 'Arvo', serif;
+    color: color('main');
+    font-weight: 700;
 }
 
 .wrapper {
@@ -23,7 +27,7 @@ body {
 }
 
 .clearfix {
-    &:after {
+    &::after {
         display: block;
         clear: both;
         content: '';
@@ -40,6 +44,46 @@ body {
     margin: 0 auto;
 
     @extend .clearfix;
+}
+
+.logo {
+    display: block;
+    &-title {
+        font: 40px 'Arvo', serif;
+        color: color('main');
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 4px;
+            left: 8px;
+            display: block;
+            width: 14px;
+            height: 4px;
+            background-color: color('main');
+        }
+    }
+}
+
+.btn {
+    color: color('light');
+    min-width: 190px;
+    background-color: color('main');
+    font: 18px 'Arvo', serif;
+    padding: 14px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.par {
+    font: 15px 'Poppins', sans-serif;
+    color: color('main');
+}
+.head-title {
+    font: 35px 'Arvo', serif;
+    color: color('main');
+    padding: 15px 0;
 }
 
 /*END:base*/

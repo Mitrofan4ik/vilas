@@ -166,12 +166,12 @@ h6 {
 a,
 a:hover,
 a:focus {
-    color: #000;
     outline: none;
+    text-decoration: none;
 }
 
 ul {
-    margin-bottom: 20px;
+    list-style: none;
 }
 
 p {
