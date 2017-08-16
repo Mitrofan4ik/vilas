@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "dependencies": {
     "jQuery": "^3.2.1",
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "slick-carousel": "slick.js#^1.7.1"
   }
 }
