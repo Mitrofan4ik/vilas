@@ -18,4 +18,11 @@ jQuery( document ).ready(function() {
 		}
 	});
 	// SHOW NAV MENU
+	// ABOUT SLIDER
+	$('.jsAboutSlider').slick({
+		vertical: true,
+		infinite: false,
+		verticalSwiping: true
+	});
+	// ABOUT SLIDER
 });

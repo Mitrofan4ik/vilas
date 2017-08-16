@@ -1,7 +1,97 @@
 /* about */
 .about {
+	padding: 90px 0;
+	background-color: color('about-bg');
 	&-content {
-		
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		&-left {
+			width: 50%;
+		}
+		&-right {
+			width: 50%;
+		}
 	}
+}
+
+.about-desc {
+	background-color: color('about-bg');
+	box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.14);
+	border-radius: 10px;
+	padding: 55px 65px;
+	p {
+		font: 400 15px/20px 'Roboto', sans-serif;
+		color: color('main');
+		strong {
+			font: 700 30px 'Arvo', serif;
+			color: color('main');
+		}
+	}
+}
+
+.about-slider {
+	position: relative;
+	.slick-arrow {
+		position: absolute;
+		background-color: transparent;
+		right: 0;
+		font-size: 0;
+		width: 27px;
+		height: 17px;
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			width: 15px;
+			height: 2px;
+			display: block;
+			background-color: color('main');
+		}
+
+	}
+	.slick-prev {
+		top: -20px;
+		z-index: 9;
+		&::before {
+			top: 7px;
+			left: 1px;
+			transform: rotate(-45deg);
+		}
+		&::after {
+			top: 7px;
+			right: 1px;
+			transform: rotate(45deg);
+		}
+	} 
+	.slick-next {
+		z-index: 9;
+		top: 0px;
+		&::before {
+			top: 7px;
+			left: 1px;
+			transform: rotate(45deg);
+		}
+		&::after {
+			top: 7px;
+			right: 1px;
+			transform: rotate(-45deg);
+		}
+	} 
+	.slick-disabled {
+		&::before {
+			background-color: color('arrow-dis');
+		}
+		&::after {
+			background-color: color('arrow-dis');
+		}
+	}
+}
+
+.slide-title {
+	font: 700 20px 'Arvo', serif;
+	color: color('main');
+
 }
 /* END: about */
