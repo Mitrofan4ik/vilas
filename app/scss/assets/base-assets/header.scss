@@ -11,16 +11,24 @@
     	align-items: center;
 	    justify-content: space-between;
 	    flex-wrap: wrap;
+	    padding: 20px 0;
     }
 }
 
 .nav {
 	&-list {
-		display: block;
+		display: none;
 		font-size: 0;
 		float: left;
 		&__item {
 			display: inline-block;
+			&.active {
+				.nav-list__link {
+					background-color: color('main');
+					color: color('light');
+					border-radius: 8px;
+				}
+			}
 		}
 		&__link {
 			color: color('main');
@@ -34,8 +42,13 @@
 				border-radius: 8px;
 			}
 		}
+/* 
+		&.show-menu {
+
+		} */
 	}
 }
+
 .trigger {
 	display: block;
 	float: right;
@@ -97,7 +110,19 @@
 
 	&:hover {
 		.trigger-cursor {
-				box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.6);
+			box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.6);
+		}
+	}
+
+	&.active {
+		.trigger-cursor {
+			box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.6);
+			&::before {
+				content: '-';
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
 		}
 	}
 }
