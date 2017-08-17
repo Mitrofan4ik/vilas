@@ -4,7 +4,7 @@
     padding-top: 99px;
     &-content {
     	font-size: 0;
-    	padding-bottom: 78px;
+    	padding-bottom: 68px;
 
     	.left-side {
 			display: inline-block;
@@ -40,6 +40,11 @@
 			font: 15px 'Roboto', sans-serif;
 			color: color('main');
 			line-height: 28px;
+			@extend %default-transition;
+				&:hover {
+					text-decoration: underline;
+					color: #7f7f7f;
+				}
 		}
 	}
 }
@@ -55,12 +60,17 @@
 			a {
 				font: 700 15px 'Roboto', sans-serif;
 				color: color('main');
+				@extend %default-transition;
+				&:hover {
+					text-decoration: underline;
+					color: #7f7f7f;
+				}
 			}
 			p {
 				font: 15px 'Roboto', sans-serif;
 				color: color('main');
 				line-height: 19px;
-				margin-bottom: 5px;
+				margin-bottom: 10px;
 			}
 		}
 	}
@@ -90,6 +100,9 @@
 		color: color('main');
 		padding: 10px;
 		border-radius: 5px 0 0 5px;
+		&.error {
+			border: 1px solid red;
+		}
 	}
 }
 /*END:footer*/

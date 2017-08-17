@@ -41,6 +41,15 @@ $( document ).ready(function() {
 		$(this).css('display', 'none');
 		$("#jsMasonryGrid .jsGridHidden").show(500);
 	});
+
+	$(".jsFormFooter").validate({
+	    rules: {
+	        confirmation_email: {
+	            required: true,
+	            email: true,
+	        }
+	    }
+	});
 });
 
 $(window).scroll(function() {
