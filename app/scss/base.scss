@@ -11,6 +11,9 @@ h1 {
     font: 700 40px 'Arvo', serif;
     color: color('main');
     margin-bottom: 0;
+    @media screen and (max-width: 440px) {
+        font-size: 36px;
+    }
 }
 
 h2 {
@@ -49,6 +52,9 @@ h2 {
     margin: 0 auto;
     padding: 0 30px;
     @extend .clearfix;
+    @media screen and (max-width: 1200px) {
+        padding: 0 15px;
+    }
 }
 
 .logo {
@@ -115,6 +121,10 @@ h2 {
     font: 15px 'Poppins', sans-serif;
     color: color('main');
     line-height: 20px;
+    @media screen and (max-width: 990px) {
+        font-size: 14px;
+        line-height: normal;
+    }
 }
 .head-title {
     font: 35px 'Arvo', serif;
@@ -123,6 +133,9 @@ h2 {
     padding: 4px 0;
     display: block;
     margin-bottom: 20px;
+    @media screen and (max-width: 440px) {
+        font-size: 31px;
+    }
 }
 
 .title {
