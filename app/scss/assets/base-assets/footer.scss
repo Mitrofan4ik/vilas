@@ -5,6 +5,9 @@
     &-content {
     	font-size: 0;
     	padding-bottom: 68px;
+    	display: flex;
+    	align-items: flex-start;
+    	flex-wrap: wrap;
 
     	.left-side {
 			display: inline-block;
