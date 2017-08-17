@@ -1,9 +1,11 @@
 /*footer*/
 .site-footer {
     background-color: color('footer-bg');
-    padding-top: 90px;
+    padding-top: 99px;
     &-content {
     	font-size: 0;
+    	padding-bottom: 78px;
+
     	.left-side {
 			display: inline-block;
    			width: 50%;
@@ -19,7 +21,7 @@
 	text-align: center;
 	font: 700 15px 'Arvo', serif;
 	color: color('footer-bg');
-	padding: 17px 0;
+	padding: 15px 0;
 	a {
 		text-transform: uppercase;
 		color: color('footer-bg');
@@ -37,6 +39,7 @@
 		&__link {
 			font: 15px 'Roboto', sans-serif;
 			color: color('main');
+			line-height: 28px;
 		}
 	}
 }
@@ -45,7 +48,9 @@
 	display: inline-block;
     width: 50%;
     vertical-align: top;
+    padding: 0 14px;
 	&-list {
+		padding: 5px 0;
 		&__item {
 			a {
 				font: 700 15px 'Roboto', sans-serif;
@@ -54,6 +59,8 @@
 			p {
 				font: 15px 'Roboto', sans-serif;
 				color: color('main');
+				line-height: 19px;
+				margin-bottom: 5px;
 			}
 		}
 	}
@@ -62,13 +69,15 @@
 	display: inline-block;
     width: 50%;
     vertical-align: top;
+    padding: 0 0 0 20px;
     p {
     	font: 15px 'Roboto', sans-serif;
 		color: color('main');
+		padding: 5px 0;
     }
 }
 .footer-form {
-
+	padding: 10px 0;
 }
 .input-holder {
 	display: flex;

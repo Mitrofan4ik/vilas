@@ -82,8 +82,13 @@ h2 {
     border-radius: 8px;
     &.submit {
         border-radius: 0 5px 5px 0;
-        min-width: 95px;
+        min-width: 96px;
         padding: 10px 14px;
+    }
+    &.all {
+        margin: 0 auto;
+        display: block;
+        margin-top: 104px;
     }
 }
 
@@ -104,7 +109,7 @@ h2 {
 .title {
     font: 700 20px 'Arvo', serif;
     color: color('main');
-    margin-bottom: 35px;
+    margin-bottom: 39px;
     display: block;
 }
 

@@ -1,6 +1,14 @@
 /* published project */
 .project {
-	padding: 100px 0;
+	padding: 104px 0 73px;
+	&-content {
+		h2 {
+			text-align: center;
+		}
+	}
+	&-masonry {
+		padding: 28px 0;
+	}
 }
 
 #masonryGrid {
@@ -9,10 +17,11 @@
 .grid {
 	margin: 0 auto;
 	font-size: 0;
+	    width: 100% !important;
 }
 .grid-item {
 	margin: 5px 10px;
-	width: 345px;
+	width: 350px;
 	border: 1px solid #cfcfcf;
 	box-shadow: 0px 0px 4px 0px #cfcfcf;
 	border-radius: 5px;
@@ -27,6 +36,9 @@
 
 	&--small {
 		height: 220px;
+		.link {
+			top: 30%;
+		}
 	}
 
 	&--large {
@@ -61,13 +73,13 @@
 	    width: 100%;
 	    bottom: 0;
 	    left: 0;
-	    padding: 33px 13px;
+	    padding: 27px 16px;
     }
 }
 
 .link {
 	position: absolute;
-    top: 30%;
+    top: 43%;
     left: 50%;
     transform: translate(-50%, -50%);
 	&>a {
@@ -76,10 +88,10 @@
 		width: 40px;
 		height: 40px;
 		border-radius: 22px;
-    	box-shadow: 0 0 5px 0px #6e6e6e;
     	transform: rotate(0deg);
-    	transition: transform 0.2s linear;
+    	transition: all 0.2s linear;
     	&:hover {
+    		box-shadow: 0 0 5px 0px #6e6e6e;
     		transform: rotate(360deg);
     	}
 	}
