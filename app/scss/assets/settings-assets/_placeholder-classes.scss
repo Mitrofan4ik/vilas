@@ -9,6 +9,11 @@
         content: '';
     }
 }
+%ellipsis-points {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
 
 %img-responsive {
     display: block;

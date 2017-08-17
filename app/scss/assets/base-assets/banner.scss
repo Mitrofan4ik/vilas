@@ -1,6 +1,6 @@
 /* banner */
 .banner {
-	min-height: 653px;
+	min-height: 652px;
 	background: url('../img/banner.jpg') no-repeat bottom center;
 	background-size: cover;
 	width: 100%;
@@ -17,7 +17,10 @@
 	&-content {
 		position: relative;
 		text-align: center;
-		padding-top:  200px;
+		padding-top:  240px;
+		p {
+			margin-bottom: 50px;
+		}
 	}
 }
 

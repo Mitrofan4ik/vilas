@@ -71,8 +71,16 @@
 
 }
 .input-holder {
+	display: flex;
+    justify-content: center;
 	&__input {
-
+		flex-grow: 1;
+		width: 150px;
+		border: none;
+		font: 15px 'Roboto', sans-serif;
+		color: color('main');
+		padding: 10px;
+		border-radius: 5px 0 0 5px;
 	}
 }
 /*END:footer*/

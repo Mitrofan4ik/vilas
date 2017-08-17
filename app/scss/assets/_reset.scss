@@ -192,6 +192,21 @@ input[type='search']::-webkit-search-results-button,
 input[type='search']::-webkit-search-results-decoration {
     display: none;
 }
+*::-webkit-input-placeholder{
+    color: #3e3e3e;
+}
+
+*::-moz-placeholder{
+    color: #3e3e3e;
+}
+
+*:-moz-placeholder{
+    color: #3e3e3e;
+}
+
+*:-ms-input-placeholder{
+    color: #3e3e3e;
+}
 
 input::-moz-focus-inner,
 button::-moz-focus-inner {

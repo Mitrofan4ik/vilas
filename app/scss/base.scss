@@ -8,9 +8,14 @@ body {
 }
 
 h1 {
-    font: 40px 'Arvo', serif;
+    font: 700 40px 'Arvo', serif;
     color: color('main');
-    font-weight: 700;
+    margin-bottom: 0;
+}
+
+h2 {
+    font: 700 25px 'Arvo', serif; 
+    color: color('main');
 }
 
 .wrapper {
@@ -68,23 +73,32 @@ h1 {
 
 .btn {
     color: color('light');
-    min-width: 190px;
+    min-width: 160px;
     background-color: color('main');
     font: 18px 'Arvo', serif;
     padding: 14px;
     display: inline-block;
     text-align: center;
     border-radius: 8px;
+    &.submit {
+        border-radius: 0 5px 5px 0;
+        min-width: 95px;
+        padding: 10px 14px;
+    }
 }
 
 .par {
     font: 15px 'Poppins', sans-serif;
     color: color('main');
+    line-height: 20px;
 }
 .head-title {
     font: 35px 'Arvo', serif;
     color: color('main');
     padding: 15px 0;
+    padding: 4px 0;
+    display: block;
+    margin-bottom: 20px;
 }
 
 .title {
@@ -94,6 +108,19 @@ h1 {
     display: block;
 }
 
+.caption {
+    font: 700 18px 'Arvo', serif;
+    color: color('main');
+    display: block;
+    @extend %ellipsis-points;
+}
+.subtitle {
+    font: 400 15px 'Roboto', sans-serif;
+    font-style: italic;
+    color: color('main');
+    display: block;
+    @extend %ellipsis-points;
+}
 
 
 /*END:base*/

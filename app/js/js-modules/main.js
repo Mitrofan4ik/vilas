@@ -1,7 +1,7 @@
 "use strict"; 
 //= js-assets/variables
 //= js-assets/functions
-jQuery( document ).ready(function() {
+$( document ).ready(function() {
 	// ATIVE LIST ITEM
 	$('.jsNavList').on('click', 'li', function(event) {
 		event.preventDefault();
@@ -10,11 +10,12 @@ jQuery( document ).ready(function() {
 	// ATIVE LIST ITEM
 	// SHOW NAV MENU
 	$('.jsNav').on('click', '.jsTrigger', function() {
-		$(this).toggleClass('active');
-		if (true) {
-			$('.jsNavList').show(1000);
+		var $this = $(this);
+		$this.toggleClass('active');
+		if ($this.hasClass('active')) {
+			$('.jsNavList').show(700);
 		} else {
-			$('.jsNavList').hide(1000);
+			$('.jsNavList').hide(700);
 		}
 	});
 	// SHOW NAV MENU
@@ -25,4 +26,27 @@ jQuery( document ).ready(function() {
 		verticalSwiping: true
 	});
 	// ABOUT SLIDER
+	// PROJECT MASONRY
+	var $grid = $('.grid').masonry({
+		itemSelector: '.grid-item',
+		isFitWidth: true,
+		columnWidth: 1
+	});
+
+	$grid.imagesLoaded().progress( function() {
+	  $grid.masonry('layout');
+	});
+	// PROJECT MASONRY
+	$('.jsSeeAll').on('click', function() {
+		$(this).css('display', 'none');
+		$("#jsMasonryGrid .jsGridHidden").show(500);
+	});
+});
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 70) {
+        $('.site-header').addClass('is-stuck');
+    } else if ($(this).scrollTop() < 70) {
+        $('.site-header').removeClass('is-stuck');
+    }
 });
